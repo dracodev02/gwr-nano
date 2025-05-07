@@ -30,7 +30,7 @@ const Certificate = () => {
           />
         </div>
       </div>
-      <div className="h-1.5 border-t-2 border-b-2 border-black w-full mt-10"></div>
+      <div className="h-1.5 border-t-2 border-b-2 border-black w-full"></div>
       <div style={{ width: "100%", height: "450px" }}>
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d5389.106909485382!2d18.988661!3d47.518087!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4741dec53635111f%3A0x8561175568f6ff4a!2sBudapest%2C%20Labanc%20%C3%BAt%207a%2C%201021%20Hungary!5e0!3m2!1sen!2sus!4v1746618567440!5m2!1sen!2sus"

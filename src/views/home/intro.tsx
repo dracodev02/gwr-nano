@@ -26,7 +26,7 @@ const Intro = () => {
             href="/about_us"
             className="hover:text-white text-white/80 px-8 py-4 transition-all duration-500"
           >
-            {lang(languages.get_in_touch)}
+            {lang(languages.Get_in_touch)}
           </Link>
         </div>
       </div>
