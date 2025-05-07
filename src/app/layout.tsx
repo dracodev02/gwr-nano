@@ -6,38 +6,43 @@ import Header from "@/views/share/header";
 import Footer from "@/views/share/footer";
 
 export const metadata: Metadata = {
-  title: "Contact Us - GWR Nano Insulation",
   icons: "/logo.png",
+  title: "Home - GWR Nano Insulation",
   description:
-    "Contact Us Get in touch with Us. Feel free to contact us with any questions you have. Contact Us for more information Contact Info Email info@gwr-nano.com Call Us +36 30 908 2216+36 70 319 5835 Location H-1037 Budapest, Csillaghegyi út 23. Follow Us Facebook-f Instagram Youtube",
+    "GWR NANO INSULATION® Born to change insulation Our goal is to provide quality, efficient energy-saving for a sustainable future.    Request information Get In Touch Welcome to the future of insulation. GWR NANO INSULATION® GWR NANO INSULATION® GWR Nano is a paint-like liquid insulating material with special properties. A unique, revolutionary solution in the construction … Home Read More »",
   metadataBase: new URL("http://gwr-nano.com"),
   alternates: {
-    canonical: "/contact-us/",
+    canonical: "/",
   },
   openGraph: {
-    title: "Contact Us - GWR Nano Insulation",
+    title: "Home - GWR Nano Insulation",
     description:
-      "Contact Us Get in touch with Us. Feel free to contact us with any questions you have...",
-    url: "http://gwr-nano.com/contact-us/",
+      "GWR NANO INSULATION® Born to change insulation Our goal is to provide quality, efficient energy-saving for a sustainable future.    Request information Get In Touch Welcome to the future of insulation. GWR NANO INSULATION® GWR NANO INSULATION® GWR Nano is a paint-like liquid insulating material with special properties. A unique, revolutionary solution in the construction … Home Read More »",
+    url: "http://gwr-nano.com/",
     siteName: "GWR Nano Insulation",
     locale: "en_US",
     type: "article",
     images: [
       {
-        url: "http://gwr-nano.com/wp-content/uploads/2023/10/innovationaward-210x300.jpg",
-        width: 210,
-        height: 300,
-        alt: "Innovation Award",
+        url: "http://gwr-nano.com/wp-content/uploads/2023/10/20190716_211910-768x1024.jpg",
+        width: 768,
+        height: 1024,
+        alt: "GWR Nano Insulation",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Contact Us - GWR Nano Insulation",
+    title: "Home - GWR Nano Insulation",
     description:
-      "Contact Us Get in touch with Us. Feel free to contact us with any questions you have...",
+      "GWR NANO INSULATION® Born to change insulation Our goal is to provide quality, efficient energy-saving for a sustainable future.    Request information Get In Touch Welcome to the future of insulation. GWR NANO INSULATION® GWR NANO INSULATION® GWR Nano is a paint-like liquid insulating material with special properties. A unique, revolutionary solution in the construction … Home Read More »",
     images: [
-      "http://gwr-nano.com/wp-content/uploads/2023/10/innovationaward-210x300.jpg",
+      {
+        url: "http://gwr-nano.com/wp-content/uploads/2023/10/20190716_211910-768x1024.jpg",
+        width: 768,
+        height: 1024,
+        alt: "GWR Nano Insulation",
+      },
     ],
     creator: "@gwrnano",
   },
