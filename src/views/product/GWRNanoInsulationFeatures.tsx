@@ -19,7 +19,7 @@ const GWRNanoInsulationFeatures = () => {
           {lang(languages.A_unique_revolutionary)}
         </li>
       </ul>
-      <div className="grid grid-cols-4 gap-x-10 gap-y-4 leading-[1.85714285714286] mt-[50px]">
+      <div className="grid grid-cols-4 max-lg:grid-cols-2 max-md:grid-cols-1 gap-x-10 gap-y-4 leading-[1.85714285714286] mt-[50px]">
         <div className="flex flex-col">
           <h4 className="text-primary text-xl">01.</h4>
           <h5 className="text-xl mt-2">{lang(languages.Heat_insulation)}</h5>
@@ -66,7 +66,7 @@ const GWRNanoInsulationFeatures = () => {
           <p className="">{lang(languages.Vapor_permeability)}</p>
         </div>
       </div>
-      <div className="flex justify-between gap-10 mt-[50px]">
+      <div className="flex justify-between gap-10 mt-[50px] max-md:flex-col">
         <div className="flex-1 aspect-[3/2] bg-black"></div>
         <div className="flex-1 aspect-[3/2] bg-black"></div>
       </div>

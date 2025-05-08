@@ -16,11 +16,11 @@ const AreasOfApplicationProduct = () => {
 
   return (
     <section className="container-custom flex flex-col pb-[104px]">
-      <h2 className="text-[40px] mb-5">
+      <h2 className="text-[40px] max-md:text-[32px] mb-5">
         {lang(languages.Areas_of_application)}
       </h2>
       <Divider />
-      <div className="grid grid-cols-3 gap-6 mt-9 ">
+      <div className="grid grid-cols-3 gap-6 mt-9 max-md:grid-cols-1">
         <div className="flex gap-4 flex-col">
           <div className="w-[32px]">
             <FaBuilding className="text-[32px] text-primary" />

@@ -3,14 +3,17 @@ import Button from "@/components/button";
 import Divider from "@/components/divider";
 import { ILanguageSupported, languages } from "@/languages";
 import { useLanguages } from "@/providers/languagesProvider";
+import Link from "next/link";
 import { BsArrowRight } from "react-icons/bs";
 
 interface ProvideTheBestServiceProps {
   subTitle: ILanguageSupported;
+  email: string;
 }
 
 const ProvideTheBestService: React.FC<ProvideTheBestServiceProps> = ({
   subTitle,
+  email,
 }) => {
   const { lang } = useLanguages();
 
@@ -19,15 +22,17 @@ const ProvideTheBestService: React.FC<ProvideTheBestServiceProps> = ({
       <div className="absolute top-0 left-0 w-full h-full bg-[#101218] opacity-50"></div>
       <div className="flex flex-col items-center container-custom gap-5 relative z-[1] py-[104px]">
         <Divider />
-        <h2 className="text-white text-[40px]">
+        <h2 className="text-white text-[40px] max-md:text-[32px] max-md:text-center">
           {lang(languages.We_Provide_the_Best)}
         </h2>
-        <p className="text-white/80">{lang(subTitle)}</p>
-        <Button
-          className="absolute top-full left-1/2 -translate-x-1/2 -translate-y-1/2"
-          title={lang(languages.Contact_us_today)}
-          icon={<BsArrowRight className="text-sm" />}
-        />
+        <p className="text-white/80 max-md:text-center">{lang(subTitle)}</p>
+        <Link href={"mailto:" + email}>
+          <Button
+            className="absolute top-full left-1/2 -translate-x-1/2 -translate-y-1/2 max-md:w-fit whitespace-nowrap"
+            title={lang(languages.Contact_us_today)}
+            icon={<BsArrowRight className="text-sm" />}
+          />
+        </Link>
       </div>
     </section>
   );

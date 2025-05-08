@@ -8,10 +8,10 @@ const FrequentlyAskedQuestions = () => {
 
   return (
     <section className="container-custom py-[104px]">
-      <h2 className="text-center text-[40px] mb-[60px]">
+      <h2 className="text-center text-[40px] max-md:text-[32px] mb-[60px]">
         {lang(languages.Frequently_Asked_Questions)}
       </h2>
-      <div className="grid grid-cols-2 gap-8">
+      <div className="grid grid-cols-2 gap-8 max-md:grid-cols-1">
         <div className="flex flex-col gap-8">
           <div>
             <h5 className="text-center text-xl">

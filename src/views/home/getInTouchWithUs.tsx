@@ -8,6 +8,7 @@ import { languages } from "@/languages";
 import { useLanguages } from "@/providers/languagesProvider";
 import Image from "next/image";
 import ReCAPTCHA from "react-google-recaptcha";
+import Link from "next/link";
 
 const SITE_KEY = "6Ldk7i4rAAAAABJKStyUIckzVfebo6SQRNIhDtgg";
 
@@ -34,9 +35,11 @@ const GetInTouchWithUs = () => {
   return (
     <section className=" py-[104px] bg-home-sec5 relative">
       <div className="absolute top-0 left-0 w-full h-full bg-white opacity-70"></div>
-      <div className="flex container-custom items-center justify-between gap-20 relative z-[1]">
+      <div className="flex container-custom items-center justify-between gap-20 relative z-[1] max-lg:flex-col">
         <div className="">
-          <h2 className="text-[40px]">{lang(languages.Get_in_touch)}</h2>
+          <h2 className="text-[40px] max-md:text-[32px] text-center capitalize">
+            {lang(languages.Get_in_touch_with_Us)}
+          </h2>
 
           <div className="mt-8">
             <h4 className="text-[19px] text-center">{lang(languages.Phone)}</h4>
@@ -50,7 +53,12 @@ const GetInTouchWithUs = () => {
 
           <div className="mt-8">
             <h4 className="text-[19px] text-center">{lang(languages.Email)}</h4>
-            <p className="text-center">info@gwr-nano.com</p>
+            <Link
+              href="mailto:info@gwr-nano.com"
+              className="text-primary/90 hover:text-primary font-bold"
+            >
+              <p className="text-center">info@gwr-nano.com</p>
+            </Link>
           </div>
 
           <div className="mt-8">
@@ -61,17 +69,17 @@ const GetInTouchWithUs = () => {
           </div>
         </div>
 
-        <div className="flex">
+        <div className="flex max-md:w-full">
           <Image
             src="/images/bg-mail-form.jpg"
             alt="mail-form"
             width={336}
             height={673}
-            className="object-cover"
+            className="object-cover max-md:hidden"
           />
           <form
             onSubmit={handleSubmit}
-            className="flex flex-col bg-[#212121] p-5 gap-5"
+            className="flex flex-col bg-[#212121] p-5 gap-5 max-md:w-full"
           >
             <h2 className="text-white text-[19px]">
               {lang(languages.Send_a_message)}
@@ -92,11 +100,13 @@ const GetInTouchWithUs = () => {
             {/* reCAPTCHA */}
             <ReCAPTCHA sitekey={SITE_KEY} onChange={handleCaptchaChange} />
 
-            <Button
-              className="mt-4 w-fit rounded-full text-sm"
-              title={lang(languages.Send_message)}
-              type="submit"
-            />
+            <div className="flex max-md: justify-end">
+              <Button
+                className="mt-4 w-fit text-sm"
+                title={lang(languages.Send_message)}
+                type="submit"
+              />
+            </div>
           </form>
         </div>
       </div>

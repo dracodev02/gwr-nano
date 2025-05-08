@@ -24,6 +24,12 @@ h1, h2, h3, h4, h5, h6 {
   color: #101218;
 }
 
+@media screen and (max-width: 768px) {
+  p, li {
+    font-size: 14px;
+  }
+}
+
 .bg-home-sec1 {
   background-image: url("/images/bg-home-header.jpg");
   background-repeat: no-repeat;

@@ -22,12 +22,12 @@ const Button: React.FC<ButtonProps> = ({
 }) => {
   const classes = cn(
     {
-      "bg-primary text-white hover:bg-[#08acf2] px-8 py-4":
+      "bg-primary text-white hover:bg-[#08acf2] px-4 py-2 max-md:text-sm":
         variant === "primary",
       "bg-transparent text-primary hover:text-black p-0": variant === "outline",
-      "flex icenter items-center gap-x-4": icon,
+      "flex items-center gap-x-2": icon,
     },
-    "rounded-[14px] font-bold transition-all duration-500",
+    "rounded-lg font-bold transition-all duration-500",
     className
   );
 

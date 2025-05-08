@@ -3,7 +3,7 @@ import Image from "next/image";
 const Certificate = () => {
   return (
     <section className="container-custom pb-[104px] flex flex-col gap-10">
-      <div className="grid grid-cols-2 py-2.5">
+      <div className="grid grid-cols-2 py-2.5 max-md:grid-cols-1">
         <div className="flex justify-center">
           <Image
             src="/images/innovationaward.jpg"
