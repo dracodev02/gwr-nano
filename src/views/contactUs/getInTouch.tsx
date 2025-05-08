@@ -28,7 +28,7 @@ const GetInTouch = () => {
         <p>{lang(languages.Feel_free_to_contact)}</p>
       </div>
       <div className="mt-10 grid grid-cols-2 max-lg:grid-cols-1">
-        <div className="py-10 pl-10 pr-20 shadow-[0_0_10px_0_rgba(0,0,0,0.1)] max-md:p-5">
+        <div className="py-10 pl-10 pr-20 shadow-[0_0_10px_0_rgba(0,0,0,0.1)] max-md:p-5 bg-[#fbfbfb]">
           <h3 className="text-[32px] flex items-center gap-5 mb-9">
             {lang(languages.Contact_Us_for_more)}
           </h3>
@@ -43,7 +43,7 @@ const GetInTouch = () => {
               placeholder={lang(languages.Email)}
             />
             <div className="w-full">
-              <p className="text-grays">
+              <p className="text-gray-600 font-bold">
                 {lang(languages.Country)}{" "}
                 <span className="text-red-500">*</span>
               </p>

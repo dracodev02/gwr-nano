@@ -32,7 +32,7 @@ export const LanguagesProvider = (props: Props) => {
   const { children } = props;
 
   const [currentLanguage, setCurrentLanguage] =
-    useState<keyof ILanguageSupported>("EN");
+    useState<keyof ILanguageSupported>("VI");
   const keys: (keyof ILanguageSupported)[] = ["EN", "VI"];
 
   const [isOpen, setIsOpen] = useState(false);
@@ -65,8 +65,8 @@ export const LanguagesProvider = (props: Props) => {
     if (keys.includes(language)) {
       setCurrentLanguage(language);
     } else {
-      setCurrentLanguage("EN");
-      saveCookieLanguage("EN");
+      setCurrentLanguage("VI");
+      saveCookieLanguage("VI");
     }
   }, []);
 
