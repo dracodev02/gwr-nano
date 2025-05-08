@@ -46,7 +46,7 @@ const Header: React.FC<HeaderProps> = ({ mode = "transparent" }) => {
     >
       <div className="container-custom flex justify-between items-center px-4">
         {/* Logo */}
-        <Link href={"/"} className="flex-shrink-0">
+        <Link href={"/"} className="flex-shrink-0 animate-fade">
           <Image
             src="/images/logo.png"
             alt="logo"
@@ -63,7 +63,7 @@ const Header: React.FC<HeaderProps> = ({ mode = "transparent" }) => {
               <div key={tab.name} className="flex items-center">
                 <Link
                   href={tab.href}
-                  className={`transition-colors  ${
+                  className={`transition-colors animate-fade ${
                     mode === "white"
                       ? "text-primary/90 hover:text-primary"
                       : "text-white hover:text-gray-200"
@@ -76,7 +76,7 @@ const Header: React.FC<HeaderProps> = ({ mode = "transparent" }) => {
         </div>
 
         {/* Social Icons - Desktop */}
-        <div className="hidden lg:flex items-center gap-8">
+        <div className="hidden lg:flex items-center gap-8 animate-fade">
           <Link
             target="_blank"
             href="https://www.facebook.com/gwrnanoinsulation/"

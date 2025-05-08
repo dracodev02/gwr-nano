@@ -23,6 +23,7 @@ export default {
     },
   },
   plugins: [
+    require('tailwindcss-animated'),
     plugin(function ({ addComponents }) {
       addComponents({
         ".container-custom": {

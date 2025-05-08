@@ -11,7 +11,7 @@ const Intro = () => {
   return (
     <section className="bg-home-sec1 pt-[140px] pb-[60px] w-full relative">
       <div className="absolute top-0 left-0 w-full h-full bg-[#101218] opacity-50"></div>
-      <div className="max-w-[450px] mx-auto relative z-[1] px-2">
+      <div className="max-w-[450px] mx-auto relative z-[1] px-2 animate-fade-up">
         <h1 className="text-[39px] text-white max-md:text-center">
           {lang(languages.gwr_nano_insulation)}
         </h1>
