@@ -3,7 +3,7 @@ import Button from "@/components/button";
 import Divider from "@/components/divider";
 import Input from "@/components/input";
 import TextArea from "@/components/textArea";
-import { languages } from "@/languages";
+
 import { useLanguages } from "@/providers/languagesProvider";
 import Link from "next/link";
 import { FaPhoneVolume } from "react-icons/fa";
@@ -15,9 +15,9 @@ const ContactData = () => {
   return (
     <section className="container-custom flex w-full py-[100px] max-md:flex-col gap-y-10">
       <div className="flex-1">
-        <h5 className="text-xl">{lang(languages.Your_request)}</h5>
+        <h5 className="text-xl">{lang("Your_request")}</h5>
         <h2 className="text-[40px] max-md:text-[32px]">
-          {lang(languages.Contact_data)}
+          {lang("Contact_data")}
         </h2>
         <div className="flex flex-col gap-4 mt-9">
           <Link
@@ -41,54 +41,54 @@ const ContactData = () => {
       <form className="flex flex-col flex-1 gap-5">
         <div className="w-[60%] max-sm:w-full">
           <p className="font-bold">
-            {lang(languages.Name)} <span className="text-red-500">*</span>
+            {lang("Name")} <span className="text-red-500">*</span>
           </p>
           <div className="flex gap-5 w-full">
             <div className="flex-1">
               <Input required className="w-full" />
-              <p className="text-sm max-md:text-xs">{lang(languages.First)}</p>
+              <p className="text-sm max-md:text-xs">{lang("First")}</p>
             </div>
             <div className="flex-1">
               <Input required className="w-full" />
-              <p className="text-sm max-md:text-xs">{lang(languages.Last)}</p>
+              <p className="text-sm max-md:text-xs">{lang("Last")}</p>
             </div>
           </div>
         </div>
         <div className="w-[60%] max-sm:w-full">
           <p className="font-bold">
-            {lang(languages.Email)} <span className="text-red-500">*</span>
+            {lang("Email")} <span className="text-red-500">*</span>
           </p>
           <Input type="email" required className="w-full" />
         </div>
         <div className="w-[60%] max-sm:w-full">
-          <p className="font-bold">{lang(languages.Telephone)}</p>
+          <p className="font-bold">{lang("Telephone")}</p>
           <Input className="w-full" />
         </div>
         <div className="w-[60%] max-sm:w-full">
           <p className="font-bold">
-            {lang(languages.Company)} <span className="text-red-500">*</span>
+            {lang("Company")} <span className="text-red-500">*</span>
           </p>
           <Input required className="w-full" />
         </div>
         <div className="w-[60%] max-sm:w-full">
           <p className="font-bold">
-            {lang(languages.Country)} <span className="text-red-500">*</span>
+            {lang("Country")} <span className="text-red-500">*</span>
           </p>
           <Input required className="w-full" />
         </div>
         <div className="w-[60%] max-sm:w-full">
           <p className="font-bold">
-            {lang(languages.Subject)} <span className="text-red-500">*</span>
+            {lang("Subject")} <span className="text-red-500">*</span>
           </p>
           <Input required className="w-full" />
         </div>
         <div className="">
           <p className="font-bold">
-            {lang(languages.Message)} <span className="text-red-500">*</span>
+            {lang("Message")} <span className="text-red-500">*</span>
           </p>
           <TextArea
             required
-            placeholder={lang(languages.Message)}
+            placeholder={lang("Message")}
             className="w-full"
             rows={4}
           />
@@ -96,7 +96,7 @@ const ContactData = () => {
         <div className="flex max-md:justify-end">
           <Button
             className="w-fit text-sm"
-            title={lang(languages.Submit)}
+            title={lang("Submit")}
             type="submit"
           />
         </div>

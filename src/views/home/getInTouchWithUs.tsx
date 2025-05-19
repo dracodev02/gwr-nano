@@ -4,7 +4,7 @@ import React, { useState } from "react";
 import Button from "@/components/button";
 import Input from "@/components/input";
 import TextArea from "@/components/textArea";
-import { languages } from "@/languages";
+
 import { useLanguages } from "@/providers/languagesProvider";
 import Image from "next/image";
 import ReCAPTCHA from "react-google-recaptcha";
@@ -38,11 +38,11 @@ const GetInTouchWithUs = () => {
       <div className="flex container-custom items-center justify-between gap-20 relative z-[1] max-lg:flex-col">
         <div className="">
           <h2 className="text-[40px] max-md:text-[32px] text-center capitalize">
-            {lang(languages.Get_in_touch_with_Us)}
+            {lang("Get_in_touch_with_Us")}
           </h2>
 
           <div className="mt-8">
-            <h4 className="text-[19px] text-center">{lang(languages.Phone)}</h4>
+            <h4 className="text-[19px] text-center">{lang("Phone")}</h4>
             <p className="text-center mb-2">
               <strong>+36 30 908 2216</strong>
             </p>
@@ -52,7 +52,7 @@ const GetInTouchWithUs = () => {
           </div>
 
           <div className="mt-8">
-            <h4 className="text-[19px] text-center">{lang(languages.Email)}</h4>
+            <h4 className="text-[19px] text-center">{lang("Email")}</h4>
             <Link
               href="mailto:info@gwr-nano.com"
               className="text-primary/90 hover:text-primary font-bold"
@@ -62,9 +62,7 @@ const GetInTouchWithUs = () => {
           </div>
 
           <div className="mt-8">
-            <h4 className="text-[19px] text-center">
-              {lang(languages.Address)}
-            </h4>
+            <h4 className="text-[19px] text-center">{lang("Address")}</h4>
             <p className="text-center">H-1037 Budapest, Csillaghegyi út 23.</p>
           </div>
         </div>
@@ -81,21 +79,18 @@ const GetInTouchWithUs = () => {
             onSubmit={handleSubmit}
             className="flex flex-col bg-[#212121] p-5 gap-5 max-md:w-full"
           >
-            <h2 className="text-white text-[19px]">
-              {lang(languages.Send_a_message)}
-            </h2>
+            <h2 className="text-white text-[19px]">{lang("Send_a_message")}</h2>
 
-            <Input placeholder={lang(languages.Name)} />
-            <Input type="email" placeholder={lang(languages.Email)} />
+            <Input placeholder={lang("Name")} />
+            <Input type="email" placeholder={lang("Email")} />
             <div className="w-full">
               <p className="text-grays">
-                {lang(languages.Country)}{" "}
-                <span className="text-red-500">*</span>
+                {lang("Country")} <span className="text-red-500">*</span>
               </p>
               <Input required className="w-full" />
             </div>
-            <Input placeholder={lang(languages.Subject)} />
-            <TextArea placeholder={lang(languages.Message)} />
+            <Input placeholder={lang("Subject")} />
+            <TextArea placeholder={lang("Message")} />
 
             {/* reCAPTCHA */}
             <ReCAPTCHA sitekey={SITE_KEY} onChange={handleCaptchaChange} />
@@ -103,7 +98,7 @@ const GetInTouchWithUs = () => {
             <div className="flex max-md: justify-end">
               <Button
                 className="mt-4 w-fit text-sm"
-                title={lang(languages.Send_message)}
+                title={lang("Send_message")}
                 type="submit"
               />
             </div>

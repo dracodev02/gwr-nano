@@ -1,7 +1,7 @@
 "use client";
 import Button from "@/components/button";
 import Divider from "@/components/divider";
-import { languages } from "@/languages";
+
 import { useLanguages } from "@/providers/languagesProvider";
 import Link from "next/link";
 
@@ -14,11 +14,11 @@ const GetYourFreeConsultation = () => {
       <div className="flex flex-col items-center container-custom gap-5 relative z-[1]">
         <Divider />
         <h2 className="text-white text-[40px] max-md:text-[32px] max-md:text-center">
-          {lang(languages.Get_Your_Free)}
+          {lang("Get_Your_Free")}
         </h2>
-        <p className="text-white/80">{lang(languages.Get_all_the)}</p>
+        <p className="text-white/80">{lang("Get_all_the")}</p>
         <Link href={"/"}>
-          <Button className="mt-4" title={lang(languages.Click_here)} />
+          <Button className="mt-4" title={lang("Click_here")} />
         </Link>
       </div>
     </section>

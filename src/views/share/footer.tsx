@@ -1,6 +1,5 @@
 "use client";
 
-import { languages } from "@/languages";
 import { useLanguages } from "@/providers/languagesProvider";
 import Image from "next/image";
 import Link from "next/link";
@@ -67,14 +66,14 @@ const Footer = () => {
         <div></div>
         <div className="sm:col-span-2">
           <h2 className="text-white text-[22px] sm:text-end">
-            {lang(languages.Contact_Details)}
+            {lang("Contact_Details")}
           </h2>
           <div className="mt-5 flex flex-col sm:items-end">
             <Link
               className="text-primary hover:text-white w-fit transition-all"
               href={"/contact-us"}
             >
-              {lang(languages.GWR_Nano_Ltd)}
+              {lang("GWR_Nano_Ltd")}
             </Link>
             <Link
               className="text-primary hover:text-white w-fit transition-all"
@@ -105,8 +104,8 @@ const Footer = () => {
       </div>
       <div className="border-t border-[#7c7d7f3d]">
         <div className="container-custom flex max-sm:flex-col justify-between max-sm:justify-center max-sm:gap-2 items-center h-20">
-          <p>{lang(languages.Copyright_GWR_Nano_Insulation)}</p>
-          <p>{lang(languages.Powered_by_Target)}</p>
+          <p>{lang("Copyright_GWR_Nano_Insulation")}</p>
+          <p>{lang("Powered_by_Target")}</p>
         </div>
       </div>
     </div>

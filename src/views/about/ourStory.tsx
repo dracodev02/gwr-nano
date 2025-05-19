@@ -1,6 +1,6 @@
 "use client";
 import Divider from "@/components/divider";
-import { languages } from "@/languages";
+
 import { useLanguages } from "@/providers/languagesProvider";
 import Image from "next/image";
 import { BsFillCheckCircleFill } from "react-icons/bs";
@@ -28,18 +28,18 @@ const OurStory = () => {
           </div>
           <div className="flex flex-col gap-5 flex-1 justify-center">
             <h2 className="text-[40px] max-md:text-[32px] leading-[1.3]">
-              {lang(languages.Our_Story)}
+              {lang("Our_Story")}
             </h2>
             <Divider />
             <ul className="list-outside list-disc">
               <li className="leading-[1.85714285714286]">
-                {lang(languages.It_was_used_to)}
+                {lang("It_was_used_to")}
               </li>
               <li className="leading-[1.85714285714286]">
-                {lang(languages.GWR_Nano_Insulation_using)}
+                {lang("GWR_Nano_Insulation_using")}
               </li>
               <li className="leading-[1.85714285714286]">
-                {lang(languages.This_results_in_better)}
+                {lang("This_results_in_better")}
               </li>
             </ul>
             <div className="grid grid-cols-2 gap-2 max-md:grid-cols-1">
@@ -47,31 +47,25 @@ const OurStory = () => {
                 <div className="w-4 h-4 aspect-square">
                   <BsFillCheckCircleFill className="text-primary text-base" />
                 </div>
-                <p className="font-bold">{lang(languages["78_vapor"])}</p>
+                <p className="font-bold">{lang("78_vapor")}</p>
               </div>
               <div className="flex items-center gap-3">
                 <div className="w-4 h-4 aspect-square">
                   <BsFillCheckCircleFill className="text-primary text-base" />
                 </div>
-                <p className="font-bold">
-                  {lang(languages["20_years_guarantee"])}
-                </p>
+                <p className="font-bold">{lang("20_years_guarantee")}</p>
               </div>
               <div className="flex items-center gap-3">
                 <div className="w-4 h-4 aspect-square">
                   <BsFillCheckCircleFill className="text-primary text-base" />
                 </div>
-                <p className="font-bold">
-                  {lang(languages.Working_operation_range)}
-                </p>
+                <p className="font-bold">{lang("Working_operation_range")}</p>
               </div>
               <div className="flex items-center gap-3">
                 <div className="w-4 h-4 aspect-square">
                   <BsFillCheckCircleFill className="text-primary text-base" />
                 </div>
-                <p className="font-bold">
-                  {lang(languages.It_does_not_contain)}
-                </p>
+                <p className="font-bold">{lang("It_does_not_contain")}</p>
               </div>
             </div>
           </div>

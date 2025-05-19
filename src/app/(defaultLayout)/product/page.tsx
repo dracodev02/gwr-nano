@@ -1,4 +1,3 @@
-import { languages } from "@/languages";
 import AreasOfApplicationProduct from "@/views/product/areasOfApplicationProduct";
 import BannerProductPage from "@/views/product/banner";
 import ContactData from "@/views/product/contactData";
@@ -59,7 +58,7 @@ const Product = () => {
       <GWRNanoInsulationFeatures />
       <AreasOfApplicationProduct />
       <ProvideTheBestService
-        subTitle={languages.A_unique_and_revolutionary}
+        subTitle={"A_unique_and_revolutionary"}
         email="info@gwr-nano.com"
       />
       <ContactData />

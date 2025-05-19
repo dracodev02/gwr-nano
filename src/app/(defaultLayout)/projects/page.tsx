@@ -1,4 +1,3 @@
-import { languages } from "@/languages";
 import ProvideTheBestService from "@/views/product/provideTheBestService";
 import ProjectsBanner from "@/views/projects/banner";
 import RecentProjects from "@/views/projects/recentProjects";
@@ -56,7 +55,7 @@ const ProjectsPage = () => {
       <ProjectsBanner />
       <RecentProjects />
       <ProvideTheBestService
-        subTitle={languages.Our_unique_product_will}
+        subTitle={"Our_unique_product_will"}
         email="export@gwr-nano.com"
       />
     </>

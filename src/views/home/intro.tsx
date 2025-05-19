@@ -1,6 +1,6 @@
 "use client";
 import Button from "@/components/button";
-import { languages } from "@/languages";
+
 import { useLanguages } from "@/providers/languagesProvider";
 import Link from "next/link";
 import { BsArrowRight } from "react-icons/bs";
@@ -13,18 +13,16 @@ const Intro = () => {
       <div className="absolute top-0 left-0 w-full h-full bg-[#101218] opacity-50"></div>
       <div className="max-w-[450px] mx-auto relative z-[1] px-2 animate-fade-up">
         <h1 className="text-[39px] text-white max-md:text-center">
-          {lang(languages.gwr_nano_insulation)}
+          {lang("gwr_nano_insulation")}
         </h1>
         <h1 className="text-white text-[29px] max-md:text-center">
-          {lang(languages.born_to)}
+          {lang("born_to")}
         </h1>
-        <p className="text-grays mb-9 max-md:text-center">
-          {lang(languages.our_goal)}
-        </p>
+        <p className="text-grays mb-9 max-md:text-center">{lang("our_goal")}</p>
         <div className="flex items-center max-md:justify-center max-md:flex-wrap">
           <Link href={"mailto:info@gwr-nano.com"}>
             <Button
-              title={lang(languages.request_information)}
+              title={lang("request_information")}
               icon={<BsArrowRight className="text-sm" />}
             />
           </Link>
@@ -34,7 +32,7 @@ const Intro = () => {
             className="hover:text-white text-white/80 px-8 py-4 transition-all duration-500"
           >
             <Button
-              title={lang(languages.Get_in_touch)}
+              title={lang("Get_in_touch")}
               variant="outline"
               className="text-grays hover:text-white font-normal"
             />

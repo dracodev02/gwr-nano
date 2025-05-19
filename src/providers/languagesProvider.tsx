@@ -1,7 +1,7 @@
 "use client";
 
 import Button from "@/components/button";
-import { ILanguageSupported } from "@/languages";
+import { ILanguageList, ILanguageSupported } from "@/languages";
 import {
   getCookieLanguage,
   saveCookieLanguage,
@@ -15,11 +15,12 @@ import {
   useState,
 } from "react";
 import { MdOutlineKeyboardDoubleArrowRight } from "react-icons/md";
+import { vietnamese, english } from "@/languages";
 
 type LanguagesProps = {
   currentLanguage: keyof ILanguageSupported;
   setCurrentLanguage: Dispatch<SetStateAction<keyof ILanguageSupported>>;
-  lang: (wordRepresentative: ILanguageSupported) => string;
+  lang: (wordRepresentative: keyof ILanguageList) => string;
 };
 
 const Languages = createContext<LanguagesProps | undefined>(undefined);
@@ -37,8 +38,19 @@ export const LanguagesProvider = (props: Props) => {
 
   const [isOpen, setIsOpen] = useState(false);
 
-  const lang = (wordRepresentative: ILanguageSupported): string => {
-    const item = wordRepresentative[currentLanguage];
+  const _getCurrentPackageLanguage = (): ILanguageList => {
+    switch (currentLanguage) {
+      case "VI":
+        return vietnamese;
+      case "EN":
+        return english;
+      default:
+        return vietnamese;
+    }
+  };
+
+  const lang = (wordRepresentative: keyof ILanguageList): string => {
+    const item = _getCurrentPackageLanguage()[wordRepresentative];
     if (!item) return "No translation found";
     return item;
   };

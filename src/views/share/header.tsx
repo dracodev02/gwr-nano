@@ -1,6 +1,5 @@
 "use client";
 
-import { languages } from "@/languages";
 import { useLanguages } from "@/providers/languagesProvider";
 import Image from "next/image";
 import Link from "next/link";
@@ -25,12 +24,13 @@ const Header: React.FC<HeaderProps> = ({ mode = "transparent" }) => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   useEffect(() => {
+    if (!currentLanguage) return;
     setTabs([
-      { name: lang(languages.home), href: "/" },
-      { name: lang(languages.product), href: "/product" },
-      { name: lang(languages.projects), href: "/projects" },
-      { name: lang(languages.about_us), href: "/about" },
-      { name: lang(languages.contact), href: "/contact-us" },
+      { name: lang("home"), href: "/" },
+      { name: lang("product"), href: "/product" },
+      { name: lang("projects"), href: "/projects" },
+      { name: lang("about_us"), href: "/about" },
+      { name: lang("contact"), href: "/contact-us" },
     ]);
   }, [currentLanguage]);
 

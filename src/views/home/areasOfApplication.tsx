@@ -1,7 +1,7 @@
 "use client";
 
 import Divider from "@/components/divider";
-import { languages } from "@/languages";
+
 import { useLanguages } from "@/providers/languagesProvider";
 import Image from "next/image";
 import {
@@ -46,10 +46,10 @@ const AreasOfApplication = () => {
       </div>
       <div className="flex flex-col gap-y-5 flex-1">
         <h2 className="text-[40px] max-md:text-[32px]">
-          {lang(languages.Areas_of_application)}
+          {lang("Areas_of_application")}
         </h2>
         <Divider />
-        <p className="">{lang(languages.These_are_the)}</p>
+        <p className="">{lang("These_are_the")}</p>
         <div className="grid grid-cols-2 gap-6 mt-9 max-md:grid-cols-1">
           <div className="flex gap-4 max-md:flex-col max-md:items-center">
             <div className="w-[32px]">
@@ -57,16 +57,16 @@ const AreasOfApplication = () => {
             </div>
             <div>
               <h5 className="text-xl max-md:text-center">
-                {lang(languages.RESIDENTIAL_AND_COMMERCIAL)}
+                {lang("RESIDENTIAL_AND_COMMERCIAL")}
               </h5>
               <p className="mt-2 max-md:text-center">
-                {lang(languages.Interior_and_exterior)}
+                {lang("Interior_and_exterior")}
               </p>
               <p className="mt-2 max-md:text-center">
-                {lang(languages.Roofs_and_structures)}
+                {lang("Roofs_and_structures")}
               </p>
               <p className="mt-2 max-md:text-center">
-                {lang(languages.Air_conditioning_systems)}
+                {lang("Air_conditioning_systems")}
               </p>
             </div>
           </div>
@@ -75,17 +75,15 @@ const AreasOfApplication = () => {
               <FaFighterJet className="text-[32px] text-primary" />
             </div>
             <div>
-              <h5 className="text-xl max-md:text-center">
-                {lang(languages.MILITARY)}
-              </h5>
+              <h5 className="text-xl max-md:text-center">{lang("MILITARY")}</h5>
               <p className="mt-2 max-md:text-center">
-                {lang(languages.Internal_and_external_military)}
+                {lang("Internal_and_external_military")}
               </p>
               <p className="mt-2 max-md:text-center">
-                {lang(languages.Military_vehicles)}
+                {lang("Military_vehicles")}
               </p>
               <p className="mt-2 max-md:text-center">
-                {lang(languages.Military_structures)}
+                {lang("Military_structures")}
               </p>
             </div>
           </div>
@@ -95,13 +93,13 @@ const AreasOfApplication = () => {
             </div>
             <div>
               <h5 className="text-xl max-md:text-center">
-                {lang(languages.CIVIL_CONSTRUCTION)}
+                {lang("CIVIL_CONSTRUCTION")}
               </h5>
               <p className="mt-2 max-md:text-center">
-                {lang(languages.Lower_area_bridges)}
+                {lang("Lower_area_bridges")}
               </p>
               <p className="mt-2 max-md:text-center">
-                {lang(languages.Liquid_and_fluid)}
+                {lang("Liquid_and_fluid")}
               </p>
             </div>
           </div>
@@ -111,16 +109,16 @@ const AreasOfApplication = () => {
             </div>
             <div>
               <h5 className="text-xl max-md:text-center">
-                {lang(languages.INDUSTRIAL_BUILDINGS)}
+                {lang("INDUSTRIAL_BUILDINGS")}
               </h5>
               <p className="mt-2 max-md:text-center">
-                {lang(languages.Hangars_garages)}
+                {lang("Hangars_garages")}
               </p>
               <p className="mt-2 max-md:text-center">
-                {lang(languages.Industrial_structures)}
+                {lang("Industrial_structures")}
               </p>
               <p className="mt-2 max-md:text-center">
-                {lang(languages.Industrial_pipelines)}
+                {lang("Industrial_pipelines")}
               </p>
             </div>
           </div>
@@ -129,18 +127,14 @@ const AreasOfApplication = () => {
               <FaSnowplow className="text-[32px] text-primary" />
             </div>
             <div>
-              <h5 className="text-xl max-md:text-center">
-                {lang(languages.VEHICLES)}
-              </h5>
+              <h5 className="text-xl max-md:text-center">{lang("VEHICLES")}</h5>
               <p className="mt-2 max-md:text-center">
-                {lang(languages.Extreme_weather_vehicles)}
+                {lang("Extreme_weather_vehicles")}
               </p>
               <p className="mt-2 max-md:text-center">
-                {lang(languages.Industrial_vehicles)}
+                {lang("Industrial_vehicles")}
               </p>
-              <p className="mt-2 max-md:text-center">
-                {lang(languages.Army_vehicles)}
-              </p>
+              <p className="mt-2 max-md:text-center">{lang("Army_vehicles")}</p>
             </div>
           </div>
           <div className="flex gap-4 max-md:flex-col max-md:items-center">
@@ -149,20 +143,18 @@ const AreasOfApplication = () => {
             </div>
             <div>
               <h5 className="text-xl max-md:text-center">
-                {lang(languages.INDUSTRIAL_STRUCTURE)}
+                {lang("INDUSTRIAL_STRUCTURE")}
               </h5>
               <p className="mt-2 max-md:text-center">
-                {lang(languages.Metal_structures)}
+                {lang("Metal_structures")}
               </p>
               <p className="mt-2 max-md:text-center">
-                {lang(languages.Industrial_vehicles)}
+                {lang("Industrial_vehicles")}
               </p>
               <p className="mt-2 max-md:text-center">
-                {lang(languages.Pipeline_structures)}
+                {lang("Pipeline_structures")}
               </p>
-              <p className="mt-2 max-md:text-center">
-                {lang(languages.Water_tanks)}
-              </p>
+              <p className="mt-2 max-md:text-center">{lang("Water_tanks")}</p>
             </div>
           </div>
         </div>

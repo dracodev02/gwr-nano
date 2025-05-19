@@ -1,7 +1,7 @@
 "use client";
 import Button from "@/components/button";
 import Divider from "@/components/divider";
-import { languages } from "@/languages";
+
 import { useLanguages } from "@/providers/languagesProvider";
 import Image from "next/image";
 import Link from "next/link";
@@ -13,7 +13,7 @@ const RecentProjects = () => {
   return (
     <section className="container-custom py-[104px]">
       <h2 className="text-[40px] max-md:text-[32px] mb-20">
-        {lang(languages.Recent_Projects)}
+        {lang("Recent_Projects")}
       </h2>
       <div className="flex flex-col gap-10 max-md:gap-20">
         <div className="flex gap-20 max-md:gap-10 max-lg:flex-col">
@@ -32,23 +32,23 @@ const RecentProjects = () => {
             </div>
           </div>
           <div className="flex flex-col gap-5 flex-1">
-            <h4 className="text-sm -mb-3">{lang(languages.Sport_centers)}</h4>
+            <h4 className="text-sm -mb-3">{lang("Sport_centers")}</h4>
             <h2 className="text-[40px] max-md:text-[32px] leading-[1.3]">
-              {lang(languages.FIFA_WORLD_CUP)}
+              {lang("FIFA_WORLD_CUP")}
             </h2>
             <Divider />
-            <p>{lang(languages.The_Solution_GWR_Nano)}</p>
+            <p>{lang("The_Solution_GWR_Nano")}</p>
             <div className="flex items-center gap-4">
               <FaCaretRight className="text-primary" />
-              <p>{lang(languages.Air_conditioning_system)}</p>
+              <p>{lang("Air_conditioning_system")}</p>
             </div>
             <div className="flex items-center gap-4">
               <FaCaretRight className="text-primary" />
-              <p>{lang(languages.Traditional_materials_are)}</p>
+              <p>{lang("Traditional_materials_are")}</p>
             </div>
             <div className="flex items-center gap-4">
               <FaCaretRight className="text-primary" />
-              <p>{lang(languages.Q_Green_could_easily)}</p>
+              <p>{lang("Q_Green_could_easily")}</p>
             </div>
             <Link
               href={
@@ -56,7 +56,7 @@ const RecentProjects = () => {
               }
             >
               <Button
-                title={lang(languages.Case_study)}
+                title={lang("Case_study")}
                 icon={<BsArrowRight className="text-sm" />}
                 className="w-fit"
               />
@@ -65,22 +65,20 @@ const RecentProjects = () => {
         </div>
         <div className="flex gap-20 max-md:gap-10 max-lg:flex-col-reverse">
           <div className="flex flex-col gap-5 flex-1 justify-center">
-            <h4 className="text-sm -mb-3">
-              {lang(languages.Residential_Building)}
-            </h4>
+            <h4 className="text-sm -mb-3">{lang("Residential_Building")}</h4>
             <h2 className="text-[40px] max-md:text-[32px] leading-[1.3]">
-              {lang(languages.Residential_Buildings)}
+              {lang("Residential_Buildings")}
             </h2>
             <Divider />
             <ul className="list-outside list-disc">
               <li className="leading-[1.85714285714286]">
-                {lang(languages.It_can_be_applied)}
+                {lang("It_can_be_applied")}
               </li>
               <li className="leading-[1.85714285714286]">
-                {lang(languages.Fast_construction_with)}
+                {lang("Fast_construction_with")}
               </li>
               <li className="leading-[1.85714285714286]">
-                {lang(languages.It_is_cost_effective)}
+                {lang("It_is_cost_effective")}
               </li>
             </ul>
           </div>
@@ -116,18 +114,17 @@ const RecentProjects = () => {
           </div>
           <div className="flex flex-col gap-5 flex-1">
             <h2 className="text-[40px] max-md:text-[32px] leading-[1.3]">
-              {lang(languages.TUV_SUD)}
+              {lang("TUV_SUD")}
             </h2>
             <Divider />
 
             <p>
-              <strong>{lang(languages.Learn_about_our)}</strong>{" "}
-              {lang(languages.In_order_to_determine)}
+              <strong>{lang("Learn_about_our")}</strong>{" "}
+              {lang("In_order_to_determine")}
             </p>
             <Link href={"https://www.youtube.com/watch?v=pW4BwziuI1c"}>
-              {" "}
               <Button
-                title={lang(languages.Watch_video)}
+                title={lang("Watch_video")}
                 icon={<BsArrowRight className="text-sm" />}
                 className="w-fit"
               />
